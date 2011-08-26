@@ -1,5 +1,5 @@
 ---
-abstract: 'Moose Credit Card type'
+abstract: 'Moose Types related to Credit Cards'
 author:
   - 'Caleb Cushing <xenoterracide@gmail.com>'
 build_requires:
@@ -31,5 +31,6 @@ requires:
   warnings: 0
 resources:
   bugtracker: https://github.com/xenoterracide/MooseX-Types-CreditCard/issues
+  homepage: http://search.cpan.org/dist/MooseX-Types-CreditCard/
   repository: git://github.com/xenoterracide/MooseX-Types-CreditCard.git
-version: v0.1.0
+version: v0.1.1

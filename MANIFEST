@@ -13,6 +13,8 @@ t/01-valid.t
 t/02-coerce.t
 t/03-invalid.t
 t/04-foreign.t
+t/05-csc.t
+t/06-invalid-csc.t
 t/author-critic.t
 t/author-pod-spell.t
 t/release-cpan-changes.t

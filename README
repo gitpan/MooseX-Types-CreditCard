@@ -1,14 +1,14 @@
 NAME
-    MooseX::Types::CreditCard - Moose Credit Card type
+    MooseX::Types::CreditCard - Moose Types related to Credit Cards
 
 VERSION
-    version v0.1.0
+    version v0.1.1
 
 SYNOPSIS
             {
                     package My::Object;
                     use Moose;
-                    use MooseX::Types::CreditCard qw( CreditCard );
+                    use MooseX::Types::CreditCard qw( CreditCard CardSecurityCode );
 
                     has credit_card => (
                             coerce => 1,
@@ -16,22 +16,43 @@ SYNOPSIS
                             isa    => CreditCard,
                     );
 
+                    has cvv2 => (
+                            is  => 'ro',
+                            isa => CardSecurityCode,
+                    );
+
                     __PACKAGE__->meta->make_immutable;
             }
 
-            my $obj = My::Object->new({ credit_card => '4111111111111111' });
+            my $obj = My::Object->new({
+                    credit_card => '4111111111111111',
+                    cvv2        => '123',
+            });
 
 DESCRIPTION
-    This module provide a Credit Card type based on Int. It will validate
-    that the number passed to it appears to be a valid credit card number.
-    Please note that this does not mean that the Credit Card is actually
-    valid, only that it appears to be by algorithms defined in
-    Business::CreditCard.
+    This module provides types related to Credit Cards for weak validation.
 
-    The only type provided is "CreditCard".
+TYPES
+    *   "CreditCard"
 
-    Enabling coerce will strip out any non "0-9" characters from a string
-    allowing for numbers like "4111-1111-1111-1111" to be passed.
+        Base Type: "Int"
+
+        It will validate that the number passed to it appears to be a valid
+        credit card number. Please note that this does not mean that the
+        Credit Card is actually valid, only that it appears to be by
+        algorithms defined in Business::CreditCard.
+
+        Enabling coerce will strip out any non "0-9" characters from a
+        string allowing for numbers like "4111-1111-1111-1111" to be passed.
+
+    *   "CardSecurityCode"
+
+        Base Type: "Int"
+
+        A Credit Card Security Code
+        <http://wikipedia.org/wiki/Card_security_code> is a 3 or 4 digit
+        number. This is also called CSC, CVV, CVC, and CID, depending on the
+        issuing vendor.
 
 SEE ALSO
     *   Business::CreditCard
