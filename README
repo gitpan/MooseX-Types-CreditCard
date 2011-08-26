@@ -1,0 +1,55 @@
+NAME
+    MooseX::Types::CreditCard - Moose Credit Card type
+
+VERSION
+    version v0.1.0
+
+SYNOPSIS
+            {
+                    package My::Object;
+                    use Moose;
+                    use MooseX::Types::CreditCard qw( CreditCard );
+
+                    has credit_card => (
+                            coerce => 1,
+                            is     => 'ro',
+                            isa    => CreditCard,
+                    );
+
+                    __PACKAGE__->meta->make_immutable;
+            }
+
+            my $obj = My::Object->new({ credit_card => '4111111111111111' });
+
+DESCRIPTION
+    This module provide a Credit Card type based on Int. It will validate
+    that the number passed to it appears to be a valid credit card number.
+    Please note that this does not mean that the Credit Card is actually
+    valid, only that it appears to be by algorithms defined in
+    Business::CreditCard.
+
+    The only type provided is "CreditCard".
+
+    Enabling coerce will strip out any non "0-9" characters from a string
+    allowing for numbers like "4111-1111-1111-1111" to be passed.
+
+SEE ALSO
+    *   Business::CreditCard
+
+BUGS
+    Please report any bugs or feature requests on the bugtracker website
+    https://github.com/xenoterracide/MooseX-Types-CreditCard/issues
+
+    When submitting a bug or request, please include a test-file or a patch
+    to an existing test-file that illustrates the bug or desired feature.
+
+AUTHOR
+    Caleb Cushing <xenoterracide@gmail.com>
+
+COPYRIGHT AND LICENSE
+    This software is Copyright (c) 2011 by Caleb Cushing.
+
+    This is free software, licensed under:
+
+      The Artistic License 2.0 (GPL Compatible)
+

@@ -1,0 +1,62 @@
+{
+   "abstract" : "Moose Credit Card type",
+   "author" : [
+      "Caleb Cushing <xenoterracide@gmail.com>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Zilla version 4.300000, CPAN::Meta::Converter version 2.112150",
+   "license" : [
+      "artistic_2"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "MooseX-Types-CreditCard",
+   "no_index" : {
+      "file" : [
+         "perlcritic.rc"
+      ]
+   },
+   "prereqs" : {
+      "configure" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "6.30"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Business::CreditCard" : 0,
+            "MooseX::Types" : 0,
+            "MooseX::Types::Moose" : 0,
+            "namespace::autoclean" : 0,
+            "perl" : "5.008",
+            "strict" : 0,
+            "warnings" : 0
+         }
+      },
+      "test" : {
+         "requires" : {
+            "English" : 0,
+            "File::Find" : 0,
+            "File::Temp" : 0,
+            "Moose" : 0,
+            "Test::Exception" : 0,
+            "Test::More" : 0
+         }
+      }
+   },
+   "release_status" : "testing",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/xenoterracide/MooseX-Types-CreditCard/issues"
+      },
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/xenoterracide/MooseX-Types-CreditCard.git",
+         "web" : "https://github.com/xenoterracide/MooseX-Types-CreditCard"
+      }
+   },
+   "version" : "v0.1.0"
+}
+
