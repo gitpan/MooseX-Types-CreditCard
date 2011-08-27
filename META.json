@@ -42,7 +42,7 @@
             "File::Temp" : 0,
             "Moose" : 0,
             "Test::Exception" : 0,
-            "Test::More" : 0
+            "Test::More" : "0.88"
          }
       }
    },
@@ -58,6 +58,6 @@
          "web" : "https://github.com/xenoterracide/MooseX-Types-CreditCard"
       }
    },
-   "version" : "v0.1.1"
+   "version" : "v0.1.2"
 }
 

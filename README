@@ -2,7 +2,7 @@ NAME
     MooseX::Types::CreditCard - Moose Types related to Credit Cards
 
 VERSION
-    version v0.1.1
+    version v0.1.2
 
 SYNOPSIS
             {
@@ -35,7 +35,7 @@ DESCRIPTION
 TYPES
     *   "CreditCard"
 
-        Base Type: "Int"
+        Base Type: "Str"
 
         It will validate that the number passed to it appears to be a valid
         credit card number. Please note that this does not mean that the
@@ -47,7 +47,7 @@ TYPES
 
     *   "CardSecurityCode"
 
-        Base Type: "Int"
+        Base Type: "Str"
 
         A Credit Card Security Code
         <http://wikipedia.org/wiki/Card_security_code> is a 3 or 4 digit

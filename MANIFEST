@@ -9,6 +9,7 @@ docs/SubmittingPatches.pod
 lib/MooseX/Types/CreditCard.pm
 perlcritic.rc
 t/00-compile.t
+t/000-report-versions-tiny.t
 t/01-valid.t
 t/02-coerce.t
 t/03-invalid.t
