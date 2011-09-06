@@ -3,7 +3,7 @@ use 5.008;
 use strict;
 use warnings;
 
-our $VERSION = 'v0.1.2'; # VERSION
+our $VERSION = 'v0.1.3'; # VERSION
 
 use MooseX::Types -declare => [ qw( CreditCard CardSecurityCode ) ];
 use MooseX::Types::Moose qw( Str Int );
@@ -15,6 +15,7 @@ subtype CreditCard,
 	as Str,
 	where {
 		length($_) <= 20
+		&& length $_ >= 12
 		&& $_ =~ /^[0-9]+$/xms
 		&& validate($_)
 	},
@@ -57,7 +58,7 @@ MooseX::Types::CreditCard - Moose Types related to Credit Cards
 
 =head1 VERSION
 
-version v0.1.2
+version v0.1.3
 
 =head1 SYNOPSIS
 

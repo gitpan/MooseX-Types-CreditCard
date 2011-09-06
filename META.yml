@@ -33,4 +33,4 @@ resources:
   bugtracker: https://github.com/xenoterracide/MooseX-Types-CreditCard/issues
   homepage: http://search.cpan.org/dist/MooseX-Types-CreditCard/
   repository: git://github.com/xenoterracide/MooseX-Types-CreditCard.git
-version: v0.1.2
+version: v0.1.3

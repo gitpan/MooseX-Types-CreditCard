@@ -2,7 +2,7 @@ NAME
     MooseX::Types::CreditCard - Moose Types related to Credit Cards
 
 VERSION
-    version v0.1.2
+    version v0.1.3
 
 SYNOPSIS
             {

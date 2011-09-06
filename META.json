@@ -46,7 +46,7 @@
          }
       }
    },
-   "release_status" : "testing",
+   "release_status" : "stable",
    "resources" : {
       "bugtracker" : {
          "web" : "https://github.com/xenoterracide/MooseX-Types-CreditCard/issues"
@@ -58,6 +58,6 @@
          "web" : "https://github.com/xenoterracide/MooseX-Types-CreditCard"
       }
    },
-   "version" : "v0.1.2"
+   "version" : "v0.1.3"
 }
 
