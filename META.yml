@@ -3,7 +3,6 @@ abstract: 'Moose Types related to Credit Cards'
 author:
   - 'Caleb Cushing <xenoterracide@gmail.com>'
 build_requires:
-  English: 0
   File::Find: 0
   File::Temp: 0
   Moose: 0
@@ -12,7 +11,7 @@ build_requires:
 configure_requires:
   ExtUtils::MakeMaker: 6.30
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.300002, CPAN::Meta::Converter version 2.112621'
+generated_by: 'Dist::Zilla version 4.300016, CPAN::Meta::Converter version 2.120921'
 license: artistic_2
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -21,9 +20,14 @@ name: MooseX-Types-CreditCard
 no_index:
   file:
     - perlcritic.rc
+provides:
+  MooseX::Types::CreditCard:
+    file: lib/MooseX/Types/CreditCard.pm
+    version: 0.001005
 requires:
   Business::CreditCard: 0
   MooseX::Types: 0
+  MooseX::Types::Common::String: 0.001005
   MooseX::Types::Moose: 0
   namespace::autoclean: 0
   perl: 5.008
@@ -33,4 +37,4 @@ resources:
   bugtracker: https://github.com/xenoterracide/MooseX-Types-CreditCard/issues
   homepage: http://search.cpan.org/dist/MooseX-Types-CreditCard/
   repository: git://github.com/xenoterracide/MooseX-Types-CreditCard.git
-version: 0.001004
+version: 0.001005

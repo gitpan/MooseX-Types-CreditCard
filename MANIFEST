@@ -5,7 +5,6 @@ META.json
 META.yml
 Makefile.PL
 README
-docs/SubmittingPatches.pod
 lib/MooseX/Types/CreditCard.pm
 perlcritic.rc
 t/00-compile.t
@@ -18,10 +17,10 @@ t/05-csc.t
 t/06-invalid-csc.t
 t/author-critic.t
 t/author-pod-spell.t
+t/author-test-eol.t
 t/release-cpan-changes.t
 t/release-dist-manifest.t
 t/release-distmeta.t
-t/release-eol.t
 t/release-kwalitee.t
 t/release-meta-json.t
 t/release-minimum-version.t

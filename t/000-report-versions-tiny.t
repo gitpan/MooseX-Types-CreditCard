@@ -49,12 +49,12 @@ sub pmver {
 }
 
 eval { $v .= pmver('Business::CreditCard','any version') };
-eval { $v .= pmver('English','any version') };
 eval { $v .= pmver('ExtUtils::MakeMaker','6.30') };
 eval { $v .= pmver('File::Find','any version') };
 eval { $v .= pmver('File::Temp','any version') };
 eval { $v .= pmver('Moose','any version') };
 eval { $v .= pmver('MooseX::Types','any version') };
+eval { $v .= pmver('MooseX::Types::Common::String','0.001005') };
 eval { $v .= pmver('MooseX::Types::Moose','any version') };
 eval { $v .= pmver('Test::Exception','any version') };
 eval { $v .= pmver('Test::More','0.88') };

@@ -12,7 +12,6 @@ my %WriteMakefileArgs = (
   "ABSTRACT" => "Moose Types related to Credit Cards",
   "AUTHOR" => "Caleb Cushing <xenoterracide\@gmail.com>",
   "BUILD_REQUIRES" => {
-    "English" => 0,
     "File::Find" => 0,
     "File::Temp" => 0,
     "Moose" => 0,
@@ -29,12 +28,13 @@ my %WriteMakefileArgs = (
   "PREREQ_PM" => {
     "Business::CreditCard" => 0,
     "MooseX::Types" => 0,
+    "MooseX::Types::Common::String" => "0.001005",
     "MooseX::Types::Moose" => 0,
     "namespace::autoclean" => 0,
     "strict" => 0,
     "warnings" => 0
   },
-  "VERSION" => "0.001004",
+  "VERSION" => "0.001005",
   "test" => {
     "TESTS" => "t/*.t"
   }
