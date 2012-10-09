@@ -7,11 +7,11 @@ use Test::Exception;
 {
 	package Credit;
 	use Moose;
-	use MooseX::Types::CreditCard qw( CreditCard );
+	use MooseX::Types::CreditCard qw( CardNumber );
 
 	has card => (
-		is => 'ro',
-		isa => CreditCard,
+		isa => CardNumber,
+		is  => 'ro',
 	);
 
 	__PACKAGE__->meta->make_immutable;

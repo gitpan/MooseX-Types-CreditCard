@@ -9,15 +9,15 @@ lib/MooseX/Types/CreditCard.pm
 perlcritic.rc
 t/00-compile.t
 t/000-report-versions-tiny.t
-t/01-valid.t
-t/02-coerce.t
-t/03-invalid.t
-t/04-foreign.t
-t/05-csc.t
-t/06-invalid-csc.t
 t/author-critic.t
 t/author-pod-spell.t
 t/author-test-eol.t
+t/card-expiration.t
+t/cardnumber-coerce.t
+t/csc.t
+t/foreign.t
+t/invalid-csc.t
+t/invalid.t
 t/release-cpan-changes.t
 t/release-dist-manifest.t
 t/release-distmeta.t
@@ -32,3 +32,4 @@ t/release-portability.t
 t/release-synopsis.t
 t/release-test-version.t
 t/release-unused-vars.t
+t/valid.t

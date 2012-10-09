@@ -16,6 +16,7 @@ my %WriteMakefileArgs = (
     "File::Temp" => 0,
     "Moose" => 0,
     "Test::Exception" => 0,
+    "Test::Fatal" => 0,
     "Test::More" => "0.88"
   },
   "CONFIGURE_REQUIRES" => {
@@ -27,15 +28,16 @@ my %WriteMakefileArgs = (
   "NAME" => "MooseX::Types::CreditCard",
   "PREREQ_PM" => {
     "Business::CreditCard" => 0,
-    "Class::Load" => 0,
+    "Class::Load" => "0.20",
     "MooseX::Types" => 0,
     "MooseX::Types::Common::String" => "0.001005",
+    "MooseX::Types::DateTime" => 0,
     "MooseX::Types::Moose" => 0,
     "namespace::autoclean" => 0,
     "strict" => 0,
     "warnings" => 0
   },
-  "VERSION" => "0.001006",
+  "VERSION" => "0.002000",
   "test" => {
     "TESTS" => "t/*.t"
   }
