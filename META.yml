@@ -25,7 +25,7 @@ no_index:
 provides:
   MooseX::Types::CreditCard:
     file: lib/MooseX/Types/CreditCard.pm
-    version: 0.002001
+    version: 0.002002
 requires:
   Business::CreditCard: 0
   Module::Runtime: 0
@@ -33,7 +33,6 @@ requires:
   MooseX::Types::Common::String: 0.001005
   MooseX::Types::DateTime: 0
   MooseX::Types::Moose: 0
-  namespace::autoclean: 0
   perl: 5.008
   strict: 0
   warnings: 0
@@ -41,4 +40,4 @@ resources:
   bugtracker: https://github.com/xenoterracide/MooseX-Types-CreditCard/issues
   homepage: http://search.cpan.org/dist/MooseX-Types-CreditCard/
   repository: git://github.com/xenoterracide/MooseX-Types-CreditCard.git
-version: 0.002001
+version: 0.002002

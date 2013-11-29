@@ -2,9 +2,8 @@ package MooseX::Types::CreditCard;
 use 5.008;
 use strict;
 use warnings;
-use namespace::autoclean;
 
-our $VERSION = '0.002001'; # VERSION
+our $VERSION = '0.002002'; # VERSION
 
 use MooseX::Types -declare => [ qw(
 	CreditCard
@@ -106,7 +105,7 @@ MooseX::Types::CreditCard - Moose Types related to Credit Cards
 
 =head1 VERSION
 
-version 0.002001
+version 0.002002
 
 =head1 SYNOPSIS
 
@@ -181,6 +180,16 @@ stored in the object.
 
 Coerce allows you to create the L<DateTime> object from a C<HashRef> by passing
 the keys C<month> and C<year>.
+
+=head1 ACKNOWLEDGEMENTS
+
+=over
+
+=item * L<hostgator.com>
+
+For funding initial development
+
+=back
 
 =head1 SEE ALSO
 

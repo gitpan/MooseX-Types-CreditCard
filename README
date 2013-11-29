@@ -2,7 +2,7 @@ NAME
     MooseX::Types::CreditCard - Moose Types related to Credit Cards
 
 VERSION
-    version 0.002001
+    version 0.002002
 
 SYNOPSIS
             {
@@ -72,6 +72,11 @@ TYPES
 
     Coerce allows you to create the DateTime object from a "HashRef" by
     passing the keys "month" and "year".
+
+ACKNOWLEDGEMENTS
+    *   hostgator.com
+
+        For funding initial development
 
 SEE ALSO
     *   Business::CreditCard

@@ -43,7 +43,6 @@
             "MooseX::Types::Common::String" : "0.001005",
             "MooseX::Types::DateTime" : "0",
             "MooseX::Types::Moose" : "0",
-            "namespace::autoclean" : "0",
             "perl" : "5.008",
             "strict" : "0",
             "warnings" : "0"
@@ -64,7 +63,7 @@
    "provides" : {
       "MooseX::Types::CreditCard" : {
          "file" : "lib/MooseX/Types/CreditCard.pm",
-         "version" : "0.002001"
+         "version" : "0.002002"
       }
    },
    "release_status" : "stable",
@@ -79,6 +78,6 @@
          "web" : "https://github.com/xenoterracide/MooseX-Types-CreditCard"
       }
    },
-   "version" : "0.002001"
+   "version" : "0.002002"
 }
 
