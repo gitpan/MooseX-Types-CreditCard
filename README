@@ -2,7 +2,7 @@ NAME
     MooseX::Types::CreditCard - Moose Types related to Credit Cards
 
 VERSION
-    version 0.002000
+    version 0.002001
 
 SYNOPSIS
             {
@@ -63,7 +63,7 @@ TYPES
     This is also called CSC, CVV, CVC, and CID, depending on the issuing
     vendor.
 
-  CardExpiration
+  head2 CardExpiration
     Base Type: "DateTime"
 
     A Credit Card Expiration Date. It's a DateTime Object and checks to see
@@ -89,7 +89,7 @@ AUTHOR
     Caleb Cushing <xenoterracide@gmail.com>
 
 COPYRIGHT AND LICENSE
-    This software is Copyright (c) 2012 by HostGator.com.
+    This software is Copyright (c) 2013 by Caleb Cushing.
 
     This is free software, licensed under:
 

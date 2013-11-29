@@ -1,5 +1,9 @@
 Revision history for MooseX-Types-CreditCard
 
+0.002001  2013-11-29
+	- update copyright
+	- use Module::Runtime because Class::Load is being removed from Moose
+
 0.002000  2012-10-09
 	- add CardExpiration
 	[DEPRECATED]

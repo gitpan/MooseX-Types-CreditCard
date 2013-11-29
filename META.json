@@ -4,7 +4,7 @@
       "Caleb Cushing <xenoterracide@gmail.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.300025, CPAN::Meta::Converter version 2.120921",
+   "generated_by" : "Dist::Zilla version 5.006, CPAN::Meta::Converter version 2.132830",
    "license" : [
       "artistic_2"
    ],
@@ -26,13 +26,19 @@
       },
       "develop" : {
          "requires" : {
+            "Pod::Coverage::TrustPod" : "0",
+            "Test::CPAN::Changes" : "0.19",
+            "Test::CPAN::Meta" : "0",
+            "Test::Kwalitee" : "1.12",
+            "Test::Pod" : "1.41",
+            "Test::Pod::Coverage" : "1.08",
             "version" : "0.9901"
          }
       },
       "runtime" : {
          "requires" : {
             "Business::CreditCard" : "0",
-            "Class::Load" : "0.20",
+            "Module::Runtime" : "0",
             "MooseX::Types" : "0",
             "MooseX::Types::Common::String" : "0.001005",
             "MooseX::Types::DateTime" : "0",
@@ -45,8 +51,9 @@
       },
       "test" : {
          "requires" : {
-            "File::Find" : "0",
-            "File::Temp" : "0",
+            "File::Spec" : "0",
+            "IO::Handle" : "0",
+            "IPC::Open3" : "0",
             "Moose" : "0",
             "Test::Exception" : "0",
             "Test::Fatal" : "0",
@@ -57,7 +64,7 @@
    "provides" : {
       "MooseX::Types::CreditCard" : {
          "file" : "lib/MooseX/Types/CreditCard.pm",
-         "version" : "0.002000"
+         "version" : "0.002001"
       }
    },
    "release_status" : "stable",
@@ -72,6 +79,6 @@
          "web" : "https://github.com/xenoterracide/MooseX-Types-CreditCard"
       }
    },
-   "version" : "0.002000"
+   "version" : "0.002001"
 }
 
